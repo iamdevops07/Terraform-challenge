@@ -31,7 +31,6 @@ resource "aws_db_instance" "db-main-restore" {
     instance_class         = "db.t3.micro"
     identifier             = "db-main-restore"
     username               = "admin"
-    password               = "infra#123"
     snapshot_identifier    = aws_db_snapshot.rds-snapshot.id
     vpc_security_group_ids = [aws_security_group.default_rds_sg.id]
     skip_final_snapshot    = true
