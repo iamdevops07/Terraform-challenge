@@ -4,8 +4,8 @@ resource "aws_key_pair" "citadel-key" {
 }
 
 provider "aws" {
-  profile    = "default"
-  region     = "us-east-1"
+  profile = "default"
+  region  = "us-east-1"
 }
 
 resource "aws_instance" "citadel" {
