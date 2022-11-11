@@ -15,6 +15,9 @@ jobs:
   terraform:
     name: "Terraform"
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./aws-terraform-challenge-1
     steps:
       - name: Checkout
         uses: actions/checkout@v3
