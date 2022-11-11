@@ -17,7 +17,7 @@ resource "aws_instance" "citadel" {
   }
 }
 
-resource "aws_eip" "EC@_eip" {
+resource "aws_eip" "eip" {
   instance = aws_instance.citadel.id
   vpc      = true
 }
